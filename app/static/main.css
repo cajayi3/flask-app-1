@@ -1,0 +1,17 @@
+.email-field {
+    border-radius: 10px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.aside {
+    display: block;
+    margin-top: 20px;
+}
+
+.submit_button {
+    text-align: center;
+    align-items: center;
+    
+}

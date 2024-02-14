@@ -56,7 +56,7 @@ class Car(db.Model):
     year = db.Column(db.String(4))
     color = db.Column(db.String(20))
     gas = db.Column(db.String(15))
-    Mpg = db.Column(db.Integer(3))
+    Mpg = db.Column(db.Integer())
     engine = db.Column(db.String(4))
     user_token = db.Column(db.String, db.ForeignKey('user.token'), nullable = False)
 
