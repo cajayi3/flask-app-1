@@ -26,7 +26,7 @@ def signup():
         
     except:
         raise Exception('Invalid Form Data: Please check your Form')
-    return render_template('signin.html', form=form)
+    return render_template('signup.html', form=form)
 
 
 @auth.route('/signin', methods = ['GET', 'POST'])

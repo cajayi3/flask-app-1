@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../static/main.css">
+{{ url_for('static', filename='main.css') }}
 
 {% extends 'base.html' %}
 
@@ -6,8 +6,8 @@
     <main class="container p-5">
         <div class="row">
             <aside class="col-12 col-md-6">
-                <h2>Create Your Account</h2>
-                {% include 'forms.html' %}
+                <h2 class="Account">Create Your Account</h2>
+                {% include 'forms1.html' %}
             </aside>
         </div>
     </main>

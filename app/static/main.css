@@ -7,11 +7,42 @@
 
 .aside {
     display: block;
-    margin-top: 20px;
+    margin-top: 250px;
 }
 
 .submit_button {
     text-align: center;
     align-items: center;
     
+}
+
+.Sign-in {
+    text-align: center;
+}
+
+.btn-primary {
+    width: 60%;
+    margin-left: 115px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    padding: 7px;
+    
+
+}
+
+.area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.country {
+    width: 50px;
+}
+
+.Account {
+    text-align: center;
+}
+
+.row {
+    margin-top: 20px;
 }
