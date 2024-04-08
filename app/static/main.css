@@ -1,3 +1,35 @@
+.vroom {
+    height: 120px;
+    width: 200px;
+}
+
+.table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+.body{
+    width:auto;
+    height: auto;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th,td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
 .email-field {
     border-radius: 10px;
     font-style: italic;
@@ -43,6 +75,37 @@
     text-align: center;
 }
 
-.row {
+.row{
     margin-top: 20px;
 }
+
+.row1 {
+    margin-top: 20px;
+    position: relative;
+    top: 50px;
+    left: 300px;
+}
+
+.row2 {
+    margin-top: 20px;
+    position: relative;
+    top: 50px;
+    left: 300px;
+}
+
+.navbar-nav{
+    line-height: 25px;
+}
+
+.navbar-collapse{
+    margin-left: 150px;
+    word-spacing: 5px;
+}
+
+.list-group{
+    width: 800px;
+    position: relative;
+    left: 270px;
+    
+}
+

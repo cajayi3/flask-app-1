@@ -51,6 +51,7 @@ class User(db.Model, UserMixin):
     
 class Car(db.Model):
     id = db.Column(db.String, primary_key = True)
+    car = db.Column(db.String(50))
     name = db.Column(db.String(150), nullable = False)
     model = db.Column(db.String(20))
     year = db.Column(db.String(4))
@@ -60,8 +61,9 @@ class Car(db.Model):
     engine = db.Column(db.String(4))
     user_token = db.Column(db.String, db.ForeignKey('user.token'), nullable = False)
 
-    def __init__(self,name, model, year, color, gas, Mpg, engine, user_token, id = ''):
+    def __init__(self, car, name, model, year, color, gas, Mpg, engine, user_token, id = ''):
         self.id = self.set_id()
+        self.car  = car
         self.name = name
         self.model = model
         self.year = year
@@ -80,6 +82,6 @@ class Car(db.Model):
 
 class CarSchema(ma.Schema):
     class Meta:
-        fields = ['id', 'name','model','year', 'color','gas', 'Mpg']
+        fields = ['id', 'car', 'name','model','year', 'color','gas', 'Mpg', 'engine']
 
 cars_schema = CarSchema()

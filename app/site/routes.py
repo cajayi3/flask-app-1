@@ -9,3 +9,7 @@ def home():
 @site.route('/profile')
 def profile():
     return render_template('profile.html')
+
+@site.route('/cars')
+def cars():
+    return render_template('cars.html')
